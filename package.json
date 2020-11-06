@@ -1,0 +1,17 @@
+{
+  "name": "seedf-reports2json",
+  "version": "1.0.0",
+  "description": "Report cards parser for the public school system in Distrito Federal, Brazil.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "seedf",
+    "Secretaria de Educação do Distrito Federal",
+    "SEEDF",
+    "ieducar"
+  ],
+  "author": "Rafael Navarro C. Filho",
+  "license": "ISC"
+}
