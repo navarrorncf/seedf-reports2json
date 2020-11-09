@@ -1,5 +1,5 @@
 const regexStore = {
-  year: /ANO LETIVO ([0-9]{4})\n/,
+  year: /ANO LETIVO.*([0-9]{4})\n/,
   birthdate: /DATA NASC.* ([0-9/]+)\n/,
   city: /NATURALIDADE: (.*)\n/,
   state: /UF: (.*)\n/,
