@@ -13,6 +13,7 @@ const cleanString = (string) =>
     .replace(/\nResultado\n/g, '\n')
     .replace(/[1-4].*Bimestre\n/g, '\n')
     .replace(/Situa..o.*\n/g, '')
+    .replace(/Língua Estrangeira Moderna - /g, '')
     .replace(/\n{2,}/gm, '\n');
 
 module.exports = cleanString;
