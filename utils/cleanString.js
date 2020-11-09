@@ -14,6 +14,8 @@ const cleanString = (string) =>
     .replace(/[1-4].*Bimestre\n/g, '\n')
     .replace(/Situa..o.*\n/g, '')
     .replace(/Língua Estrangeira Moderna - /g, '')
+    .replace(/ESTUDANTE.*\n/g, '')
+    .split(/o estudante/)[0]
     .replace(/\n{2,}/gm, '\n');
 
 module.exports = cleanString;
