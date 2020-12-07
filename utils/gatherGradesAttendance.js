@@ -5,6 +5,7 @@ const gatherGradesAttendance = (string) => {
 
   const subjects = cleanArray
     .filter((el) => el.length > 1 && isNaN(el))
+    .filter((el) => !/REP\*/.test(el))
     .map((el) => shorten[el]);
 
   const splitSubjects = string
