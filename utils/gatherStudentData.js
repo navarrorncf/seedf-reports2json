@@ -24,6 +24,7 @@ const gatherStudentData = (string) => {
     return object;
   } catch (e) {
     console.log('No Student data found in this part of the file!');
+    console.log('*******************\n', string, '\n*******************');
     console.log(e);
   }
 
