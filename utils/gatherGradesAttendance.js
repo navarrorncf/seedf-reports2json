@@ -5,7 +5,7 @@ const gatherGradesAttendance = (string) => {
 
   const subjects = cleanArray
     .filter((el) => el.length > 1 && isNaN(el))
-    .filter((el) => !/REP\*/.test(el))
+    .filter((el) => !/REP\**/.test(el))
     .map((el) => shorten[el]);
 
   const splitSubjects = string
@@ -19,7 +19,7 @@ const gatherGradesAttendance = (string) => {
       [el]: splitSubjects[i],
     }))
     .filter(
-      (el) => !/ENR/.test(Object.keys(el)[0]) && !/PD4/.test(Object.keys(el)[0])
+      (el) => !/enr/.test(Object.keys(el)[0]) && !/pd4/.test(Object.keys(el)[0])
     );
 
   const subjectsObject = subjectsArray.reduce((acc, cur) => {
